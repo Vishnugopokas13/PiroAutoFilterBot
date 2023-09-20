@@ -901,7 +901,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
                     InlineKeyboardButton('😊 𝖠𝖻𝗈𝗎𝗍', callback_data='about'),
                 ],[
-                    InlineKeyboardButton('🔎 𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=f"https://whatsapp.com/channel/0029Va9mzu6K0IBiu0SEtm2i"))
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
