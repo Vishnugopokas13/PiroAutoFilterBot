@@ -30,7 +30,7 @@ async def start(client, message):
                     InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
                     InlineKeyboardButton('😊 𝖠𝖻𝗈𝗎𝗍', callback_data='about')
                 ],[
-                    InlineKeyboardButton('🔎 𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=f"https://whatsapp.com/channel/0029Va9mzu6K0IBiu0SEtm2i")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -53,7 +53,7 @@ async def start(client, message):
                     InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
                     InlineKeyboardButton('😊 𝖠𝖻𝗈𝗎𝗍', callback_data='about'),
                 ],[
-                    InlineKeyboardButton('🔎 𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=f"https://whatsapp.com/channel/0029Va9mzu6K0IBiu0SEtm2i")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -102,7 +102,7 @@ async def start(client, message):
                     InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
                     InlineKeyboardButton('😊 𝖠𝖻𝗈𝗎𝗍', callback_data='about')
                 ],[
-                    InlineKeyboardButton('🔎 𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=f"https://whatsapp.com/channel/0029Va9mzu6K0IBiu0SEtm2i")
                     
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -142,7 +142,7 @@ async def start(client, message):
                 file_id=file.file_id,
                 caption=f_caption,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝘔𝘖𝘝𝘐𝘌 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/MOVIE_GROP") ] ] ),
+                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝘔𝘖𝘝𝘐𝘌 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://whatsapp.com/channel/0029Va9mzu6K0IBiu0SEtm2i") ] ] ),
             )
         return
     
@@ -178,7 +178,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝘔𝘖𝘝𝘐𝘌 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/MOVIE_GROP") ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝘔𝘖𝘝𝘐𝘌 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://whatsapp.com/channel/0029Va9mzu6K0IBiu0SEtm2i") ] ] ),
                     
                 )
             except FloodWait as e:
@@ -189,7 +189,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖯𝖨𝖱𝖮 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/MOVIE_GROP") ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝘔𝘖𝘝𝘐𝘌 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://whatsapp.com/channel/0029Va9mzu6K0IBiu0SEtm2i") ] ] ),
                 )
             except Exception as e:
                 logger.warning(e, exc_info=True)
@@ -251,7 +251,7 @@ async def start(client, message):
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖯𝖨𝖱𝖮 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/piroxbots") ] ] ),
+                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝘔𝘖𝘝𝘐𝘌 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://whatsapp.com/channel/0029Va9mzu6K0IBiu0SEtm2i") ] ] ),
             )
             filetype = msg.media
             file = getattr(msg, filetype.value)
@@ -285,7 +285,7 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖯𝖨𝖱𝖮 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/piroxbots") ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝘔𝘖𝘝𝘐𝘌 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://whatsapp.com/channel/0029Va9mzu6K0IBiu0SEtm2i") ] ] ),
     )
                     
 
